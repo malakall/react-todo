@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример страницы с заголовком</title>
+    <link rel="stylesheet" href="static/main/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="aside">
+    <aside>
+        <img src="static/main/img/picture.jpg" alt="Лого">
+        <span class="logo">itProgger</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href=""><li><i class="fas fa-home"></i>Главная</li></a>
+            <a href="/about"><li><i class="fa-solid fa-address-card"></i>Про нас</li></a>
+            <a href=""><li><i class="fa-solid fa-address-book"></i>Контакты</li></a>
+            <a href="/news"><li><i class="fa-solid fa-address-book"></i>Новости</li></a>
+            <a href="{% url 'create' %}"><li><button class="btn btn-info"></button><i class=""></i>Добавить содержание</li></a>
+        </ul>
+    </aside>
+    <main>
+
+    </main>
+    </div>
+</body>
+</html>

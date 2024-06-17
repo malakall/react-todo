@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма по дабавлению статьи</title>
+</head>
+<body>
+    <div class="form">
+        <h1>Форма по дабавлению статьи</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title }} <br>
+            {{ form.anons }} <br>
+            {{ form.full_text }} <br>
+            {{ form.date }} <br>
+            <span>{{ error }}</span>
+            
+            <button class="btn btn-sucess" type="submit">Добавить статью</button> <!-- используем тип submit ,чтобы у нас происходило обновление страницы и в этот момент отправлялись данные в бд-->
+        </form>
+    </div>
+</body>
+</html>
